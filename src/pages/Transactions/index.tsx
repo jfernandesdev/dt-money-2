@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header'
+import { SearchForm } from '../../components/SearchForm'
 import { Summary } from '../../components/Summary'
 
 import { 
@@ -14,6 +15,8 @@ export function Transactions() {
       <Summary />
 
       <TransactionsContainer>
+        <SearchForm />
+        
         <TransactionsTable>
           <tbody>
             <tr>

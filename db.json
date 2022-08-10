@@ -16,13 +16,29 @@
       "price": 56,
       "createdAt": "2022-08-05T13:00:06.741Z"
     },
-     {
+    {
       "id": 3,
       "description": "Fatura Cartão",
       "type": "outcome",
       "category": "Banco",
       "price": 2500,
       "createdAt": "2022-08-08T13:00:06.741Z"
+    },
+    {
+      "description": "Desenvolvimento APP",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2022-08-10T17:47:27.420Z",
+      "id": 4
+    },
+    {
+      "description": "Teste",
+      "price": 100,
+      "category": "Trabalho",
+      "type": "outcome",
+      "createdAt": "2022-08-10T17:59:03.959Z",
+      "id": 5
     }
   ]
 }

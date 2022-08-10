@@ -7,6 +7,24 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4d4d57;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   :focus {
     outline: 0;
     box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};

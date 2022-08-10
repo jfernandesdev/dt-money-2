@@ -36,6 +36,5 @@ export const SearchFormContainer = styled.form`
       border-color: ${(props) => props.theme['green-500']};
       color: ${(props) => props.theme.white};
     }
-
   }
 `

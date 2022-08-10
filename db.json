@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Freelancer",
       "price": 6000,
-      "createdAt": "2022-08-10T13:00:06.741Z"
+      "createdAt": "2022-08-01T13:00:06.741Z"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 56,
-      "createdAt": "2022-08-08T13:00:06.741Z"
+      "createdAt": "2022-08-05T13:00:06.741Z"
     },
      {
       "id": 3,
@@ -22,7 +22,7 @@
       "type": "outcome",
       "category": "Banco",
       "price": 2500,
-      "createdAt": "2022-08-05T13:00:06.741Z"
+      "createdAt": "2022-08-08T13:00:06.741Z"
     }
   ]
 }

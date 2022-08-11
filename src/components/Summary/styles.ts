@@ -25,6 +25,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   background: ${(props) => props.theme['gray-600']};
   border-radius: 6px;
   padding: 2rem;
+  white-space: nowrap;
 
   header {
     display: flex;

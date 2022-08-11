@@ -10,7 +10,7 @@ export const SearchFormContainer = styled.form`
     border: 0;
     background: ${(props) => props.theme['gray-900']};
     color: ${(props) => props.theme['gray-300']};
-    padding: 1rem;
+    padding-left: 1rem;
 
     &::placeholder {
       color: ${(props) => props.theme['gray-500']};
@@ -41,6 +41,12 @@ export const SearchFormContainer = styled.form`
     &:disabled {
       opacity: 0.6;
       cursor: not-allowed;
+    }
+
+    @media (max-width: 769px) {
+      span {
+        display: none;
+      }
     }
   }
 `

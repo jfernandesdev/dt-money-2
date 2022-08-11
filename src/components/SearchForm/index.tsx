@@ -45,10 +45,12 @@ function SearchFormComponent() {
         {!isSubmitting ? (
           <>
             <MagnifyingGlass size={20} />
-            Buscar
+            <span>Buscar</span>
           </>
         ) : (
-          <>Buscando...</>
+          <>
+            <span>Buscando</span>...
+          </>
         )}
       </button>
     </SearchFormContainer>

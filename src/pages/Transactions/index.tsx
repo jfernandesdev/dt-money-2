@@ -11,7 +11,11 @@ import {
   TransactionsContainer,
   TransactionsTable,
   PriceHighlight,
+  HeaderTransactions,
+  TransactionCardList,
+  CardTransaction,
 } from './styles'
+import { CalendarBlank, TagSimple } from 'phosphor-react'
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
@@ -23,6 +27,15 @@ export function Transactions() {
       <Summary />
 
       <TransactionsContainer>
+        <HeaderTransactions>
+          <span>Transações</span>
+          <span>
+            {transactions.length > 1
+              ? `${transactions.length} itens`
+              : `${transactions.length} item`}
+          </span>
+        </HeaderTransactions>
+
         <SearchForm />
 
         <TransactionsTable>
@@ -42,6 +55,30 @@ export function Transactions() {
             ))}
           </tbody>
         </TransactionsTable>
+
+        <TransactionCardList>
+          {transactions.map((transaction) => (
+            <CardTransaction key={transaction.id}>
+              <header>
+                <span>{transaction.description}</span>
+                <PriceHighlight variant={transaction.type}>
+                  {transaction.type === 'outcome' && '- '}
+                  {priceFormatter.format(transaction.price)}
+                </PriceHighlight>
+              </header>
+              <footer>
+                <div>
+                  <TagSimple size={16} />
+                  {transaction.category}
+                </div>
+                <div>
+                  <CalendarBlank size={16} />
+                  {dateFormatter.format(new Date(transaction.createdAt))}
+                </div>
+              </footer>
+            </CardTransaction>
+          ))}
+        </TransactionCardList>
       </TransactionsContainer>
     </>
   )
